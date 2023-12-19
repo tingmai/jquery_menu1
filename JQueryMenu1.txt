@@ -12,18 +12,17 @@
           }
           .dropdown2{
             display: none;
+            margin-left:0px;
           }
 
-          ul{
-            padding:0;
-            margin:0;
+          .main-menu{
+           
             list-style: none;
+            display: flex;
+            justify-content: space-around;
           }
-          ul li{
-            display: inline-block;
-            width:200px;
-            position: relative;
-          }
+          
+
     </style>
     <script>
         $(document).ready(function(){
@@ -43,27 +42,25 @@
         <li class="menu-1">
             <a value="free tv" id="hover"> Free TV
             </a>
+            <ul class="dropdown1">
+                <li><a href="#">item 1</a></li>
+                <li><a href="#">item 1</a></li>
+                <li><a href="#">item 1 </a> </li>
+            </ul>
         </li>
         <li class="menu-2">
             <a value="live tv" id="hover"> Live TV
             </a>
+            <ul class="dropdown2">
+                <li><a href="#">item 2</a></li>
+                <li><a href="#">item 2</a></li>
+                <li><a href="#">item 2 </a></li>
+            </ul>
         </li>
 
 
-        <div class="dropdown1">
-            <ul>
-                <li><a href="#">item 1</a></li>
-                <li><a href="#">item 1</a></li>
-                <li><a href="#">item 1</li></a>
-            </ul>
-        </div>
-
-        <div class="dropdown2">
-            <ul>
-                <li><a href="#">item 2</a></li>
-                <li><a href="#">item 2</a></li>
-                <li><a href="#">item 2</li></a>
-            </ul>
+       
+            
         </div>
     </div>
 </body>
