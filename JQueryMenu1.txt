@@ -7,13 +7,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <style>
-          .dropdown1{
+          .dropdown1,.dropdown2{
             display: none;
+            list-style: none;
+            margin-left:-30px;
           }
-          .dropdown2{
-            display: none;
-            margin-left:0px;
-          }
+          
 
           .main-menu{
            
@@ -27,7 +26,7 @@
     <script>
         $(document).ready(function(){
             $(".menu-1").hover(function(){
-            $(".dropdown1").fadeToggle();
+            $(".dropdown1").slideToggle();
             });
 
             $(".menu-2").hover(function(){
@@ -42,20 +41,30 @@
         <li class="menu-1">
             <a value="free tv" id="hover"> Free TV
             </a>
-            <ul class="dropdown1">
-                <li><a href="#">item 1</a></li>
-                <li><a href="#">item 1</a></li>
-                <li><a href="#">item 1 </a> </li>
-            </ul>
+            <div class="dropdown1">
+                 <div class="drop-box1"> 
+                    <ul>
+                        <li>item 1</li>
+                        <li>item 1</li>
+                        <li>item 1</li>
+                        <li>item 1</li>
+                    </ul>
+                 </div>
+            </div>
         </li>
         <li class="menu-2">
             <a value="live tv" id="hover"> Live TV
             </a>
-            <ul class="dropdown2">
-                <li><a href="#">item 2</a></li>
-                <li><a href="#">item 2</a></li>
-                <li><a href="#">item 2 </a></li>
-            </ul>
+            <div class="dropdown2">
+                <div class="drop-box2"> 
+                    <ul>
+                        <li>item 2</li>
+                        <li>item 2</li>
+                        <li>item 2</li>
+                        <li>item 2</li>
+                    </ul>
+                 </div>
+            </div>
         </li>
 
 
