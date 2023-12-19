@@ -1,0 +1,77 @@
+<div id="navigation">
+        <div id="main-nav">
+            <div id="kids"><a href="../images/nav1.png">KIDS</a></div>
+            <div id="community"><a href="../images/nav2.png">COMMUNITY</a></div>
+            <div id="about"><a href="../images/nav3.png">ABOUT</a></div>
+        </div>
+    </div>
+<div class="cleared"></div>
+    <div id="sub-nav"> 
+        <ul class="menu-1 requiresJS">
+            <li>KIDS!</li>
+            <li><a href="#">Item1</a></li>
+            <li><a href="#">Item2</a></li>
+            <li><a href="#">Item3</a></li>
+            <li><a href="#">Item4</a></li>
+            <li><a href="#">Item5</a></li>
+            <li><a href="#">Item6</a></li>
+        </ul>
+        <ul class="menu-2 requiresJS">
+            <li>COMMUNITY!</li>         
+            <li><a href="#">Item1</a></li>
+            <li><a href="#">Item2</a></li>
+            <li><a href="#">Item3</a></li>
+            <li><a href="#">Item4</a></li>
+            <li><a href="#">Item5</a></li>
+            <li><a href="#">Item6</a></li>
+        </ul>
+        <ul class="menu-3 requiresJS">
+            <li>ABOUT!</li>
+            <li><a href="#">Item1</a></li>
+            <li><a href="#">Item2</a></li>
+            <li><a href="#">Item3</a></li>
+            <li><a href="#">Item4</a></li>
+            <li><a href="#">Item5</a></li>
+            <li><a href="#">Item6</a></li>
+        </ul>
+
+
+
+===================
+
+
+jQuery(document).ready(function($) {
+   
+    $('#kids, .menu-1').hover(function() {
+        $('.menu-1').show();
+    }, function() {
+        $('.menu-1').hide();
+    });
+     $('#community, .menu-2').hover(function() {
+        $('.menu-2').show();
+    }, function() {
+        $('.menu-2').hide();
+    });
+     $('#about, .menu-3').hover(function() {
+        $('.menu-3').show();
+    }, function() {
+        $('.menu-3').hide();
+    });
+    
+});
+
+
+
+========================
+
+.cleared { clear:both; float:none; }
+
+#main-nav div { float:left; padding:10px; position:relative; }
+
+#sub-nav ul { list-style:none; }
+
+#sub-nav ul li { float:left; padding:10px; } 
+
+.menu-1, .menu-2, .menu-3 { display:none; }
+
+
